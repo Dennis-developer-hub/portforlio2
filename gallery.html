@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <main>
+  <section class="content">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/bea (1).png" alt="Photo Edit 1">
+      <img src="images/dn.png" alt="Photo Edit 2">
+      <img src="images/lydia (1).png" alt="Photo Edit 3">
+      <img src="images/WhatsApp Image 2025-10-02 at 11.53.52.jpeg" alt="Photo Edit 3">
+      <img src="images/lid2.png" alt="Photo Edit 3">
+      <img src="images/enock.png" alt="Photo Edit 3">
+      <img src="images/WhatsApp Image 2025-10-03 at 14.02.28.jpeg" alt="Photo Edit 3">
+      <img src="images/br2.jpeg" alt="Photo Edit 3">
+      
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+  <p>© 2025 Dennis Lipwama | Portfolio</p>
+  <div class="footer-links">
+    <a href="tel:+254700000000">📞</a>
+    <a href="https://wa.me/254700000000" target="_blank">💬</a>
+    <a href="https://facebook.com/yourprofile" target="_blank">📘</a>
+    <a href="mailto:yourmail@example.com">✉️</a>
+  </div>
+</footer>
+
+</body>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

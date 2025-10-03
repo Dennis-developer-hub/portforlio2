@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <main>
+  <section class="about-container">
+    <img src="images/programmer2.png" alt="My Profile Photo" class="about-img">
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello! My name is Dennis, and I’m a creative web designer, photo and video editor, and data entry specialist. 
+      I enjoy building clean, responsive websites, editing visuals that stand out, and organizing data with accuracy.</p>
+
+      <p>My goal is to combine creativity and detail to deliver professional results for every project I work on. 
+      Whether it’s designing a website, editing a video, or preparing data reports, I focus on quality and reliability.</p>
+
+      <p>Take a look at my projects to see my work, and feel free to get in touch — I’d love to collaborate with you!</p>
+    </div>
+  </section>
+</main>
+
+
+
+  <footer>
+  <p>© 2025 Dennis Lipwama | Portfolio</p>
+  <div class="footer-links">
+    <a href="tel:+254117760576">📞</a>
+    <a href="https://wa.me/254117760576" target="_blank">💬</a>
+    <a href="https://facebook.com/dennis rollis" target="_blank">📘</a>
+    <a href="mailto:yourmail@example.com">✉️</a>
+  </div>
+</footer>
+
+</body>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

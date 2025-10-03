@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="form-container">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="fullname" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required minlength="6">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p id="error-message" style="color:red; margin-top:10px;"></p>
+    </section>
+  </main>
+
+  <script>
+    // Form Validation
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // stop form from refreshing page
+
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+      let errorMessage = document.getElementById("error-message");
+
+      if (password !== confirmPassword) {
+        errorMessage.textContent = "❌ Passwords do not match!";
+      } else {
+        errorMessage.style.color = "green";
+        errorMessage.textContent = "✅ Registration successful!";
+        // You could send data to server here
+      }
+    });
+  </script>
+</body>
+</html>
